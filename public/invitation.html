@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دعوة زفاف الدكتور أكرم سيلان | أفراح آل سيلان</title>
+  <meta name="description" content="يتشرف الحاج عبدالخالق سيلان وأولاده بدعوتكم الكريمة لحضور حفل زفاف نجلهم الغالي الدكتور أكرم سيلان - الثلاثاء 15 سبتمبر 2026 م في قاعة بيت سيلان الخيرية - صنعاء" />
+
+  <!-- Google Fonts: Cairo, Amiri, Aref Ruqaa -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#FFE7A3',
+              400: '#E5C06E',
+              500: '#D4AF37',
+              600: '#AA820A',
+              700: '#8C6212',
+            },
+            sanaGreen: '#0F382A',
+            yemeniDark: '#1F1914',
+            parchment: '#FAF5EB',
+            cardBg: '#FAF8F5',
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            amiri: ['Amiri', 'serif'],
+            ruqaa: ['"Aref Ruqaa"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #2C241E 0%, #8A6721 50%, #2C241E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .perspective-1500 {
+      perspective: 1500px;
+    }
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+
+    .flap-left {
+      transform-origin: left center;
+      transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+    .flap-right {
+      transform-origin: right center;
+      transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .envelope-open .flap-left {
+      transform: rotateY(-110deg);
+    }
+    .envelope-open .flap-right {
+      transform: rotateY(110deg);
+    }
+    .envelope-open .central-seal {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.3);
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FAF6F0] text-[#2C241E] font-cairo selection:bg-[#D4AF37]/30 selection:text-[#0F382A] relative overflow-x-hidden min-h-screen">
+
+  <!-- ========================================================
+       1. GATEFOLD COVER (غلاف المطوية الملكية)
+       ======================================================== -->
+  <div id="gatefold-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-[#1F1914] p-3 sm:p-6 transition-all duration-700">
+    <div id="gatefold-card" class="relative w-full max-w-[540px] h-[85vh] max-h-[740px] min-h-[540px] rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_40px_rgba(212,175,55,0.2)] flex preserve-3d cursor-pointer" onclick="openGatefold()">
+      
+      <!-- RIGHT FLAP (الطية اليمنى) -->
+      <div class="flap-right relative w-1/2 h-full bg-[#FAF5EB] border-y-2 border-r-2 border-l border-[#D4AF37]/60 rounded-r-2xl shadow-[-8px_0_20px_rgba(0,0,0,0.25)] flex flex-col justify-between p-4 sm:p-6 overflow-hidden preserve-3d">
+        <div class="absolute inset-2 sm:inset-3 border border-[#D4AF37]/45 pointer-events-none rounded-r-xl">
+          <div class="absolute top-1.5 right-1.5 w-4 h-4 border-t-2 border-r-2 border-[#D4AF37]"></div>
+          <div class="absolute bottom-1.5 right-1.5 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37]"></div>
+        </div>
+
+        <!-- Musnad Column -->
+        <div class="absolute top-6 bottom-6 right-2 sm:right-3 w-8 sm:w-10 pointer-events-none flex flex-col items-center justify-evenly opacity-70 text-[#C5A059] font-mono text-sm sm:text-base">
+          <span>𐩱</span><span>𐩫</span><span>𐩧</span><span>𐩣</span><span>𐩪</span><span>𐩺</span><span>𐩡</span><span>𐩬</span>
+        </div>
+
+        <!-- Only text on cover: أفراح آل سيلان -->
+        <div class="relative z-10 pt-3 pr-8 sm:pr-10 text-right">
+          <div class="inline-flex items-center gap-1.5 text-[#D4AF37] mb-1">
+            <span class="text-xs">✦</span>
+            <div class="w-8 h-[1px] bg-[#D4AF37]/50"></div>
+          </div>
+          <h2 class="font-ruqaa text-2xl sm:text-3xl font-bold text-[#8A6721] drop-shadow-xs leading-normal">
+            أفراح آل سيلان
+          </h2>
+        </div>
+
+        <div class="flex-1"></div>
+      </div>
+
+      <!-- LEFT FLAP (الطية اليسرى) -->
+      <div class="flap-left relative w-1/2 h-full bg-[#FAF5EB] border-y-2 border-l-2 border-r border-[#D4AF37]/60 rounded-l-2xl shadow-[8px_0_20px_rgba(0,0,0,0.25)] flex flex-col justify-between p-4 sm:p-6 overflow-hidden preserve-3d">
+        <div class="absolute inset-2 sm:inset-3 border border-[#D4AF37]/45 pointer-events-none rounded-l-xl">
+          <div class="absolute top-1.5 left-1.5 w-4 h-4 border-t-2 border-l-2 border-[#D4AF37]"></div>
+          <div class="absolute bottom-1.5 left-1.5 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37]"></div>
+        </div>
+
+        <!-- Musnad Sabaean Embossed Column -->
+        <div class="absolute top-6 bottom-6 left-2 sm:left-3 w-8 sm:w-10 pointer-events-none flex flex-col items-center justify-evenly opacity-70 text-[#C5A059] font-mono text-sm sm:text-base">
+          <span>𐩱</span><span>𐩫</span><span>𐩧</span><span>𐩣</span><span>𐩪</span><span>𐩺</span><span>𐩡</span><span>𐩬</span>
+        </div>
+
+        <div class="relative z-10 pt-3 pl-8 sm:pl-10 text-left">
+          <div class="inline-flex items-center gap-1.5 text-[#D4AF37] mb-1">
+            <div class="w-8 h-[1px] bg-[#D4AF37]/50"></div>
+            <span class="text-xs">✦</span>
+          </div>
+        </div>
+
+        <div class="flex-1"></div>
+      </div>
+
+      <!-- CENTRAL ROYAL SEAL -->
+      <div class="central-seal absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-auto transition-all duration-700">
+        <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-br from-[#FFE7A3] via-[#D4AF37] to-[#8C6212] shadow-[0_10px_25px_rgba(0,0,0,0.4),0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+          <div class="w-full h-full rounded-full bg-gradient-to-br from-[#FAF5EB] via-[#F3E8CF] to-[#E5D2A8] border-2 border-[#D4AF37] flex flex-col items-center justify-center p-2 text-center shadow-inner">
+            <span class="text-xl mb-0.5">💌</span>
+            <span class="font-ruqaa text-sm sm:text-base font-bold text-[#2A2219]">افتح الدعوة</span>
+            <span class="text-[9px] sm:text-[10px] font-cairo text-[#8A6721] mt-0.5">انقر للدخول</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Hint Bar -->
+      <div class="absolute -bottom-5 left-1/2 -translate-x-1/2 z-30 pointer-events-none flex flex-col items-center">
+        <div class="flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#1A140F]/90 border border-[#D4AF37]/50 text-[#F5D78E] text-[11px] font-cairo shadow-lg">
+          <span>✨</span>
+          <span>المس الغلاف لفتح المطوية الملكية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       2. TOP BAR
+       ======================================================== -->
+  <header class="sticky top-0 z-40 bg-[#FAF6F0]/90 backdrop-blur-md border-b border-[#D4AF37]/40 shadow-xs">
+    <div class="max-w-2xl mx-auto px-4 py-2.5 flex items-center justify-between">
+      <button onclick="refoldGatefold()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-parchment border border-[#D4AF37]/50 text-[#6D5222] text-xs font-cairo font-bold hover:bg-[#F4E9D0] transition-all">
+        <span>📜</span>
+        <span>إغلاق المطوية</span>
+      </button>
+
+      <span class="font-ruqaa text-base sm:text-lg font-bold text-[#8A6721]">أفراح آل سيلان</span>
+
+      <div class="flex items-center gap-2">
+        <button onclick="toggleAudio()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-parchment border border-[#D4AF37]/50 text-[#6D5222] text-xs font-cairo font-bold hover:bg-[#F4E9D0] transition-all">
+          <span id="nav-sound-icon">🔊</span>
+          <span id="nav-sound-label">الصوت</span>
+        </button>
+        <button onclick="shareInvitation()" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sanaGreen text-[#FAF5EB] text-xs font-cairo font-bold shadow-xs hover:bg-[#144A38] transition-all">
+          <span>📤</span>
+          <span>مشاركة</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================================
+       3. ROYAL MINIMALIST INVITATION CARD (طراز الفخامة الملكية الهادئة)
+       ======================================================== -->
+  <main class="max-w-2xl mx-auto px-3 sm:px-6 pt-4 pb-16">
+    
+    <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-[#D4AF37]/50 bg-[#FAF8F5] text-[#2C241E]">
+      
+      <!-- Aesthetic Groom Cuff & Luxury Watch Fade (صورة 3) -->
+      <div class="relative w-full h-[340px] sm:h-[420px] overflow-hidden bg-white">
+        <img
+          src="/assets/images/groom_akram_saylan_1790344163840.jpg"
+          alt="إطلالة العريس الدكتور أكرم عبدالخالق سيلان"
+          class="w-full h-full object-cover object-top"
+        />
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#FAF8F5]/60 to-[#FAF8F5]"></div>
+
+        <!-- Floating Arabic Calligraphy: "دَعْــوَة" -->
+        <div class="absolute bottom-6 inset-x-0 text-center pointer-events-none">
+          <h1 class="font-ruqaa text-5xl sm:text-7xl font-bold text-[#3B2C1E] drop-shadow-[0_4px_10px_rgba(0,0,0,0.15)] tracking-wider">
+            دَعْــــوَة
+          </h1>
+          <span class="font-cairo text-xs tracking-widest text-[#8A6721] font-bold block mt-1">
+            WEDDING INVITATION
+          </span>
+        </div>
+      </div>
+
+      <!-- Minimalist Interactive Navigation Bar (📍 Location | 📅 Calendar) -->
+      <div class="max-w-md mx-auto py-3 px-6 text-center">
+        
+        <div class="flex items-center justify-center gap-6 my-2">
+          <!-- Location Pin -->
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=%D9%82%D8%A7%D8%B9%D8%A9+%D8%A8%D9%8A%D8%AA+%D8%B3%D9%8A%D9%84%D8%A7%D9%86+%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D9%8A%D8%A9+%D8%B5%D9%86%D8%B9%D8%A7%D8%A1+%D8%A7%D9%84%D9%8A%D9%85%D9%86"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex flex-col items-center gap-1 cursor-pointer"
+            title="موقع القاعة"
+          >
+            <div class="w-11 h-11 rounded-full bg-[#FAF5EB] border border-[#D4AF37]/60 flex items-center justify-center text-[#8A6721] group-hover:scale-110 group-hover:bg-[#D4AF37] group-hover:text-white transition-all shadow-xs">
+              📍
+            </div>
+            <span class="text-[10px] font-cairo font-bold text-[#6D5222]">الموقع</span>
+          </a>
+
+          <!-- Minimal Line Divider -->
+          <div class="w-16 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
+
+          <!-- Calendar Icon -->
+          <button
+            onclick="addToCalendar()"
+            class="group flex flex-col items-center gap-1 cursor-pointer"
+            title="إضافة للتقويم"
+          >
+            <div class="w-11 h-11 rounded-full bg-[#FAF5EB] border border-[#D4AF37]/60 flex items-center justify-center text-[#8A6721] group-hover:scale-110 group-hover:bg-[#D4AF37] group-hover:text-white transition-all shadow-xs">
+              📅
+            </div>
+            <span class="text-[10px] font-cairo font-bold text-[#6D5222]">التقويم</span>
+          </button>
+        </div>
+
+        <!-- Luxury Minimalist Divider -->
+        <div class="flex items-center justify-center gap-2 my-4">
+          <div class="h-[1px] w-16 bg-[#D4AF37]/50"></div>
+          <span class="text-[#8A6721] text-xs font-mono tracking-widest">𐩱𐩫𐩧𐩣</span>
+          <div class="h-[1px] w-16 bg-[#D4AF37]/50"></div>
+        </div>
+
+        <!-- WELCOME POETRY (أبيات الترحيب المعتمدة بالدعوة) -->
+        <div class="my-5 p-4 rounded-2xl bg-[#FAF5EB] border border-[#D4AF37]/45 text-center shadow-xs">
+          <div class="text-[11px] font-cairo font-bold text-[#8A6721] mb-2 flex items-center justify-center gap-1.5">
+            <span>✦</span>
+            <span>ترحيب وإكرام الأهل</span>
+            <span>✦</span>
+          </div>
+          <div class="space-y-1.5 font-ruqaa text-base sm:text-lg text-[#2C241E] leading-relaxed">
+            <p class="text-[#8A6721] font-bold">«يا مرحبا ترحيب ينشر بالهبوب»</p>
+            <p>«يملأ الفضاء ما بين مشرق والغروب»</p>
+            <p>«بأهل الوفاء ذي شرفوا أصل القلوب»</p>
+            <p class="text-[#8A6721] font-bold">«في عرس من حبه ملا كل الدروب»</p>
+          </div>
+        </div>
+
+        <!-- Invitation Host Statement & Groom Name -->
+        <div class="space-y-4 my-6">
+          <p class="font-amiri text-lg sm:text-2xl text-[#54463A] leading-relaxed">
+            يتشرف الحاج عبدالخالق سيلان وأولاده بدعوتكم الكريمة لحضور حفل
+          </p>
+
+          <div class="py-2">
+            <h2 class="font-ruqaa text-5xl sm:text-7xl font-bold text-[#2C241E] gold-gradient-text leading-tight">
+              أَكْــــرَم
+            </h2>
+            <div class="font-amiri text-xl sm:text-2xl font-bold text-sanaGreen mt-1">
+              العريس الغالي / الدكتور أكرم سيلان
+            </div>
+          </div>
+
+          <!-- Event Details Pill -->
+          <div class="inline-block w-full p-4 rounded-2xl bg-white border border-[#D4AF37]/40 shadow-xs text-center space-y-1.5">
+            <div class="font-cairo font-bold text-xs sm:text-sm text-[#8A6721]">
+              المقيل والزفة والعشاء
+            </div>
+            <div class="font-cairo font-bold text-sm sm:text-base text-[#2C241E]">
+              الثلاثاء | 15 / 9 / 2026 م | ابتداءً من الساعة 4:00 عصراً
+            </div>
+            <div class="font-cairo text-xs sm:text-sm text-[#54463A] pt-1.5 border-t border-[#D4AF37]/20 mt-1">
+              📍 قاعة بيت سيلان الخيرية - صنعاء - الجمهورية اليمنية
+            </div>
+          </div>
+
+          <!-- Closing blessing -->
+          <div class="pt-3">
+            <p class="font-ruqaa text-2xl sm:text-3xl text-[#8A6721] font-bold">
+              «وبحضوركم يتم لنا الفرح والسرور»
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="my-8 text-center">
+      <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto text-center">
+        <div class="p-3 rounded-2xl bg-parchment border border-[#D4AF37]/50 shadow-xs">
+          <div id="countdown-days" class="text-xl sm:text-3xl font-extrabold text-[#2C241E] font-cairo">00</div>
+          <div class="text-[11px] font-bold text-[#8C6D38] font-ruqaa mt-1">يوم</div>
+        </div>
+        <div class="p-3 rounded-2xl bg-parchment border border-[#D4AF37]/50 shadow-xs">
+          <div id="countdown-hours" class="text-xl sm:text-3xl font-extrabold text-[#2C241E] font-cairo">00</div>
+          <div class="text-[11px] font-bold text-[#8C6D38] font-ruqaa mt-1">ساعة</div>
+        </div>
+        <div class="p-3 rounded-2xl bg-parchment border border-[#D4AF37]/50 shadow-xs">
+          <div id="countdown-minutes" class="text-xl sm:text-3xl font-extrabold text-[#2C241E] font-cairo">00</div>
+          <div class="text-[11px] font-bold text-[#8C6D38] font-ruqaa mt-1">دقيقة</div>
+        </div>
+        <div class="p-3 rounded-2xl bg-parchment border border-[#D4AF37]/50 shadow-xs">
+          <div id="countdown-seconds" class="text-xl sm:text-3xl font-extrabold text-[#2C241E] font-cairo">00</div>
+          <div class="text-[11px] font-bold text-[#8C6D38] font-ruqaa mt-1">ثانية</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Pill -->
+    <div class="max-w-md mx-auto p-4 rounded-2xl bg-[#FAF5EB] border border-[#D4AF37]/45 text-center shadow-xs">
+      <span class="block text-xs sm:text-sm font-bold text-[#2C241E]">
+        للاستفسار والتواصل والتنسيق مع أفراح آل سيلان:
+      </span>
+      <span class="block text-xs sm:text-sm text-[#8C6D38] font-mono mt-1 dir-ltr">
+        +967 777 000 000
+      </span>
+    </div>
+
+  </main>
+
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="w-full bg-yemeniDark text-[#FAF5EB] py-12 px-4 border-t-2 border-[#D4AF37]/50 text-center">
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="w-10 h-10 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/60 mx-auto flex items-center justify-center text-[#D4AF37]">
+        ✦
+      </div>
+      <h3 class="font-ruqaa text-2xl sm:text-3xl font-bold text-[#F5E6BE]">
+        أفراح آل سيلان
+      </h3>
+      <p class="font-amiri text-lg sm:text-xl text-[#D4AF37] leading-[2]">
+        "دامت دياركم عامرة بالأفراح والمسرات"
+      </p>
+      <p class="text-xs sm:text-sm text-[#A89887] max-w-md mx-auto leading-relaxed">
+        نسأل الله تعالى أن يبارك للعريس وأن يرزقه السعادة وراحة البال والذرية الصالحة.
+      </p>
+      <div class="text-[11px] text-[#A89887] pt-2">
+        صُممت بكل حُب واعتزاز | 2026
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS Logic -->
+  <script>
+    let isMuted = false;
+    let audioCtx = null;
+
+    function playTone(freq, dur) {
+      if (isMuted) return;
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + dur);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + dur);
+      } catch (e) {}
+    }
+
+    function openGatefold() {
+      const overlay = document.getElementById('gatefold-overlay');
+      const card = document.getElementById('gatefold-card');
+      card.classList.add('envelope-open');
+      playTone(587.33, 0.8);
+      setTimeout(() => {
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+      }, 1000);
+    }
+
+    function refoldGatefold() {
+      const overlay = document.getElementById('gatefold-overlay');
+      const card = document.getElementById('gatefold-card');
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        card.classList.remove('envelope-open');
+      }, 50);
+    }
+
+    function toggleAudio() {
+      isMuted = !isMuted;
+      document.getElementById('nav-sound-icon').innerText = isMuted ? '🔇' : '🔊';
+      document.getElementById('nav-sound-label').innerText = isMuted ? 'مكتوم' : 'الصوت';
+    }
+
+    // Countdown Timer
+    const targetDate = new Date('2026-09-15T16:00:00+03:00').getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+      if (distance <= 0) {
+        document.getElementById('countdown-days').innerText = '00';
+        document.getElementById('countdown-hours').innerText = '00';
+        document.getElementById('countdown-minutes').innerText = '00';
+        document.getElementById('countdown-seconds').innerText = '00';
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('countdown-days').innerText = String(days).padStart(2, '0');
+      document.getElementById('countdown-hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('countdown-minutes').innerText = String(minutes).padStart(2, '0');
+      document.getElementById('countdown-seconds').innerText = String(seconds).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    async function copyFallback(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (e) {}
+      }
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.top = '0';
+        ta.style.left = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    async function shareInvitation() {
+      const shareData = {
+        title: 'دعوة زفاف الدكتور أكرم سيلان | أفراح آل سيلان',
+        text: 'يتشرف الحاج عبدالخالق سيلان وأولاده بدعوتكم لحضور زفاف نجلهم الغالي الدكتور أكرم سيلان. المناسبة: المقيل والزفة | الخميس 15 / 10 / 2026 م ابتداءً من الساعة 1:30 ظهراً في صالة بيت سيلان - خمر.',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          await copyFallback(window.location.href);
+        }
+      } else {
+        await copyFallback(window.location.href);
+      }
+    }
+
+    function addToCalendar() {
+      const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('حفل زفاف الدكتور أكرم سيلان | أفراح آل سيلان')}&details=${encodeURIComponent('يتشرف الحاج عبدالخالق سيلان وأولاده بدعوتكم لحضور حفل زفاف نجلهم الغالي الدكتور أكرم سيلان في قاعة بيت سيلان الخيرية.')}&location=${encodeURIComponent('قاعة بيت سيلان الخيرية صنعاء اليمن')}&dates=20260915T130000Z/20260915T210000Z`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
